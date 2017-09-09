@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#808080"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/updatenews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Update"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/updatetime"
+        android:textColor="@color/grey_light"
+        android:id="@+id/updatetitle"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updatetime"
+        android:textColor="@color/grey_light"
+        android:layout_toRightOf="@id/updatetitle"
+        />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@id/updatenews"
+        android:id="@+id/scrollView">
+    <TableLayout
+        android:id="@+id/user_list"
+        android:background="#808080"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </ScrollView>
+
+
+
+</RelativeLayout>

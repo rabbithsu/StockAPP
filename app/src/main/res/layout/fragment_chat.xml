@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" tools:context="com.example.nccu_dct.chatapp.ChatFragment">
+    <ListView
+        android:id="@+id/groupchat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+        android:background="@drawable/groupchat_item_drawable"
+        />
+    <ListView
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+        android:background="@drawable/chat_item_drawable"
+        />
+
+</LinearLayout>

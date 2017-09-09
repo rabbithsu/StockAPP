@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/news_image"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:text="title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_title"
+
+            android:textSize="20sp"
+            android:padding="5dp" />
+        <Button
+            android:id="@+id/fontsize"
+            android:text="A"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:onClick="changesize"
+            />
+
+        <TextView
+            android:text="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_date"
+
+            android:textSize="16sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:text="content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_content"
+
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

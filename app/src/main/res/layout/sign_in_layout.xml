@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nickname : "
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:textColor="@color/grey_light"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_toLeftOf="@+id/editText3" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:textColor="@color/grey_light"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_marginBottom="59dp"
+        android:layout_alignRight="@+id/button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

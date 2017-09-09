@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.nccu.cs.nccustock.stockdetail.StockDetailFragment">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

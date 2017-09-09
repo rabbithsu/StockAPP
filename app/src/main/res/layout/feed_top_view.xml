@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#99000000"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:ellipsize="marquee"
+                android:id="@+id/top_title"
+                android:maxLines = "1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text=""
+                android:textSize="20dp"
+                android:textColor="@color/cube_mints_white" />
+
+            <TextView
+                android:id="@+id/top_datdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/top_title"
+                android:textSize="15dp"
+                android:textColor="@color/grey_light"
+                android:text="" />
+
+            <TextView
+                android:visibility="gone"
+                android:textSize="12dp"
+                android:id="@+id/top_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/cube_mints_white"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/top_datdate"
+                android:maxLines = "2"
+                android:text="" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
